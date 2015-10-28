@@ -18,7 +18,8 @@ class TestFraccion < Test::Unit::TestCase
     end
 
     def test_resta
-        
+        assert_equal(rest.num, -1)
+        assert_equal(rest.denum, 10)
     end
     
     def test_multiplicacion
