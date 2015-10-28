@@ -10,28 +10,12 @@ class Fraccion
    end
    
    def -(other)
-       return Fraccion.new(@num+other.num, @denum+other.denum) if @denum == other.denum
-       
-       a=[]
-       b=[]
-       cont=2
-       i=0
-       
-       while !@denum*other.denum 
-       
-          a << @denum*cont
-          b << other.denum*cont
-          cont +=1
-       
-       end
-       
-       for i in @denum*other.denum
-          
-       end
-      # r=@num*other.denum
-      #s=other.num*@denum
-      #t=@denum*other.denum
-      #Fraccion.new(r-s, t)
+      return Fraccion.new(@num+other.num, @denum+other.denum) if @denum == other.denum
+      
+      r=@num*other.denum
+      s=other.num*@denum
+      t=@denum*other.denum
+      Fraccion.new(r-s, t)
      
      
    end
