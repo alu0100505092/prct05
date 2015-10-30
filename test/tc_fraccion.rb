@@ -1,4 +1,4 @@
-require '../lib/fraccion.rb'
+require 'lib/fraccion.rb'
 require 'test/unit'
 
 class TestFraccion < Test::Unit::TestCase
